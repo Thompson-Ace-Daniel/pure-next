@@ -1,29 +1,23 @@
-import { type ContactSubmission, type InsertContact } from "@shared/schema";
-import { randomUUID } from "crypto";
+import { contactSubmissions, type ContactSubmission, type InsertContact } from "@shared/schema";
+import { db } from "./db";
 
 export interface IStorage {
   createContactSubmission(contact: InsertContact): Promise<ContactSubmission>;
   getAllContactSubmissions(): Promise<ContactSubmission[]>;
 }
 
-export class MemStorage implements IStorage {
-  private contactSubmissions: Map<string, ContactSubmission>;
-
-  constructor() {
-    this.contactSubmissions = new Map();
-  }
-
+export class DatabaseStorage implements IStorage {
   async createContactSubmission(insertContact: InsertContact): Promise<ContactSubmission> {
-    const id = randomUUID();
-    const createdAt = new Date().toISOString();
-    const submission: ContactSubmission = { ...insertContact, id, createdAt };
-    this.contactSubmissions.set(id, submission);
+    const [submission] = await db
+      .insert(contactSubmissions)
+      .values(insertContact)
+      .returning();
     return submission;
   }
 
   async getAllContactSubmissions(): Promise<ContactSubmission[]> {
-    return Array.from(this.contactSubmissions.values());
+    return await db.select().from(contactSubmissions);
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
