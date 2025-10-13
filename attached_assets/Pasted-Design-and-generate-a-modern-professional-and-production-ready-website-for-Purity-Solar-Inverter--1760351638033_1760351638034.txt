@@ -1,0 +1,74 @@
+Design and generate a modern, professional, and production-ready website for Purity Solar Inverter, a company specializing in clean, efficient, and reliable solar inverter technology.
+
+Design Requirements:
+
+Clean, minimalist design using white and light blue as primary color scheme (symbolizing purity, technology, and sustainability).
+
+Use high-quality vector icons and subtle gradients to enhance aesthetics.
+
+Typography should be modern and easy to read — use fonts like Poppins, Inter, or Roboto.
+
+Layout must be responsive, fast-loading, and SEO-optimized.
+
+Include subtle animations and hover effects for interactivity.
+
+Page Structure:
+
+Hero Section:
+Large banner with a solar field background, sunlight flares, and a Purity Solar Inverter unit image.
+
+Headline: “Powering a Cleaner Future with Purity”
+
+Subtext: “High-efficiency solar inverters engineered for maximum energy output and sustainability.”
+
+CTA buttons: “Get a Quote” and “Learn More”.
+
+About Us:
+Brief history of Purity Solar Inverter.
+
+Mission and vision emphasizing renewable energy and reliability.
+
+Optional image grid showing R&D, factory, and team.
+
+Products Section:
+Showcase solar inverter product line with product cards (image, specs, key features, “Learn More” button).
+
+Categories: Residential, Commercial, Industrial.
+
+Technology & Features:
+Highlight inverter technology (efficiency, smart monitoring, durability, eco-friendliness).
+
+Include infographics and icons for readability.
+
+Testimonials / Case Studies:
+Show client success stories or installations.
+
+Star ratings and customer quotes.
+
+Contact Section:
+Simple contact form (name, email, message).
+
+Company address, phone, and email.
+
+Embedded Google Map.
+
+Footer:
+Links to social media, privacy policy, and terms of service.
+
+Copyright © 2025 Purity Solar Inverter.
+
+Technical Requirements:
+
+Must be fully responsive (mobile-first design).
+
+Production-grade React/Next.js structure + Tailwind.
+Use clean semantic markup and accessibility best practices.
+
+Include smooth scrolling and lazy loading for images.
+
+Optimize for performance and SEO.
+Tone & Feel:
+
+Professional, futuristic, and eco-friendly.
+
+Trustworthy and innovative — the visual identity should communicate purity, energy, and sustainability
