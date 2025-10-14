@@ -52,7 +52,7 @@ app.use((req, res, next) => {
   // importantly only setup vite in development and after
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
-  if (app.get("env") === "development") {
+  if (process.env.NODE_ENV === "development" && !process.env.BUILD_MODE) {
     await setupVite(app, server);
   } else {
     serveStatic(app);
@@ -63,11 +63,7 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "127.0.0.1", // <-- CHANGED from "0.0.0.0" to "127.0.0.1" to fix ENOTSUP error
-    reusePort: true,
-  }, () => {
+  server.listen(port, "127.0.0.1", () => {
     log(`serving on port ${port}`);
   });
 })();
