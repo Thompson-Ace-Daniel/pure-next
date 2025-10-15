@@ -1,5 +1,5 @@
-import { Facebook, Linkedin, Instagram, Phone } from "lucide-react";
-import { FaXTwitter } from "react-icons/fa6"
+import { Facebook, Linkedin, Instagram, Phone, Mail } from "lucide-react";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa6"
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -84,7 +84,7 @@ export function Footer() {
             </h3>
             <div className="flex gap-3 mb-6">
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/puritysolarinverter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -93,25 +93,25 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
                 data-testid="link-social-twitter"
               >
-                <FaXTwitter className="w-5 h-5" />
+                <Mail className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://wa.me/2348034360049?text=Hello%20Purity%20Solar%20Inverter%2C%20I%20am%20interested%20in%20your%20solar%20inverter%20packages."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
-                data-testid="link-social-linkedin"
+                data-testid="link-social-whatsapp"
               >
-                <Linkedin className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/puritysolarinverter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
@@ -120,7 +120,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="tel:+2348034360049"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"

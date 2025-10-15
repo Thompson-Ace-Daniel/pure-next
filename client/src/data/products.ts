@@ -14,12 +14,7 @@ export const products: Product[] = [
       efficiency: "98.5%",
       warranty: "15 Years",
     },
-    features: [
-      "Smart WiFi monitoring",
-      "Compact design",
-      "Weather resistant",
-      "Easy installation"
-    ],
+    features: ["Smart WiFi monitoring", "Compact design", "Weather resistant", "Easy installation"],
     image: residentialInverter,
   },
   {
@@ -32,12 +27,7 @@ export const products: Product[] = [
       efficiency: "98.8%",
       warranty: "20 Years",
     },
-    features: [
-      "Advanced monitoring",
-      "Load balancing",
-      "Peak shaving",
-      "Remote diagnostics"
-    ],
+    features: ["Advanced monitoring", "Load balancing", "Peak shaving", "Remote diagnostics"],
     image: commercialInverter,
   },
   {
@@ -50,12 +40,7 @@ export const products: Product[] = [
       efficiency: "99.2%",
       warranty: "25 Years",
     },
-    features: [
-      "Redundant systems",
-      "Real-time analytics",
-      "Grid stabilization",
-      "24/7 support"
-    ],
-    image: industrialInverter,
+    features: ["Redundant systems", "Real-time analytics", "Grid stabilization", "24/7 support"],
+    image: industrialInverter, // Using imported image instead of URL string
   },
 ];

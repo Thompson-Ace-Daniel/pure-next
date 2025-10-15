@@ -59,7 +59,7 @@ export function TechnologySection() {
           </div>
           <div className="text-center p-6 rounded-lg bg-card">
             <p className="font-poppins font-bold text-4xl text-primary mb-2">
-              25 Years
+              5 Years
             </p>
             <p className="font-inter text-sm text-muted-foreground">
               Industry-Leading Warranty
@@ -67,7 +67,7 @@ export function TechnologySection() {
           </div>
           <div className="text-center p-6 rounded-lg bg-card">
             <p className="font-poppins font-bold text-4xl text-primary mb-2">
-              50,000+
+              2,000+
             </p>
             <p className="font-inter text-sm text-muted-foreground">
               Installations Worldwide

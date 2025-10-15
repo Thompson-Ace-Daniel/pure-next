@@ -72,7 +72,10 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-5 gap-12">
           <div className="lg:col-span-3">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
+              >
                 <FormField
                   control={form.control}
                   name="name"
@@ -164,9 +167,10 @@ export function ContactSection() {
                       Address
                     </p>
                     <p className="font-inter text-sm text-muted-foreground mt-1">
-                      1234 Solar Avenue<br />
-                      Clean Energy District<br />
-                      San Francisco, CA 94102
+                      71, Isheri Oshun Road, <br />
+                      Bucknor, Isolo, Lagos State,
+                      <br />
+                      Nigeria. No 100263.
                     </p>
                   </div>
                 </div>
@@ -179,7 +183,11 @@ export function ContactSection() {
                     <p className="font-inter font-medium text-foreground">
                       Phone
                     </p>
-                    <a href="tel:+2348034360049" target="_blank" className="font-inter text-sm text-muted-foreground mt-1">
+                    <a
+                      href="tel:+2348034360049"
+                      target="_blank"
+                      className="font-inter text-sm text-muted-foreground mt-1"
+                    >
                       +234 803 436 0049
                     </a>
                   </div>
@@ -190,12 +198,14 @@ export function ContactSection() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <a href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details." target="_blank" className="font-inter font-medium text-foreground">
+                    <p
+                      className="font-inter font-medium text-foreground"
+                    >
                       Email
-                    </a>
-                    <p className="font-inter text-sm text-muted-foreground mt-1">
-                      info@puritysolar.com
                     </p>
+                    <a href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details." target="_blank">
+                      puritysolar.inverter@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -203,7 +213,7 @@ export function ContactSection() {
 
             <div className="rounded-lg overflow-hidden h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019424486253!2d-122.41941492465178!3d37.77492971896934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0017118184837!2d3.2865470736900755!3d6.521464323189685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fba6b675197%3A0x4f6a5f40fbac0dd!2sPurity%20Solar%20Inverter%20Limited!5e0!3m2!1sen!2sus!4v1760542755497!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

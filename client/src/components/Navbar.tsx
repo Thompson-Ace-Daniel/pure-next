@@ -36,7 +36,7 @@ export function Navbar() {
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-md bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-poppins font-bold text-lg md:text-xl">P</span>
             </div>
-            <span className="font-poppins font-semibold text-lg md:text-xl text-foreground">
+            <span className="font-poppins font-semibold text-lg md:text-xl text-foreground [text-shadow:_0_1px_2px_rgb(255_255_255_/_30%)]">
               Purity Solar Inverter
             </span>
           </div>

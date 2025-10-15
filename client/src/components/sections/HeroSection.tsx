@@ -16,8 +16,8 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-background/40 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-24 md:py-32 text-center">
@@ -27,9 +27,9 @@ export function HeroSection() {
         >
           Powering a Cleaner Future with Purity
         </h1>
-        
+
         <p
-          className="font-inter text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-800 delay-150"
+          className="font-inter text-lg md:text-xl font-700 text-muted-foreground max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-800 delay-150"
           data-testid="text-hero-subtitle"
         >
           High-efficiency solar inverters engineered for maximum energy output
