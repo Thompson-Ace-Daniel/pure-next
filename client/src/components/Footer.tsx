@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Instagram, Phone } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6"
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,7 @@ export function Footer() {
                 </span>
               </div>
               <span className="font-poppins font-semibold text-xl">
-                Purity Solar
+                Purity Solar Inverter
               </span>
             </div>
             <p className="font-inter text-sm text-white/70 leading-relaxed">
@@ -98,7 +99,7 @@ export function Footer() {
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
                 data-testid="link-social-twitter"
               >
-                <Twitter className="w-5 h-5" />
+                <FaXTwitter className="w-5 h-5" />
               </a>
               <a
                 href="https://linkedin.com"
@@ -118,6 +119,15 @@ export function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
+                data-testid="link-social-instagram"
+              >
+                <Phone className="w-5 h-5" />
+              </a>
             </div>
             <p className="font-inter text-sm text-white/70">
               Stay updated with our latest innovations and sustainability news.
@@ -128,7 +138,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-inter text-sm text-white/70">
-              © {currentYear} Purity Solar Inverter. All rights reserved.
+              © {currentYear} Purity Solar Inverter Ltd. All rights reserved.
             </p>
             <div className="flex gap-6 font-inter text-sm">
               <a

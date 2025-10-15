@@ -179,9 +179,9 @@ export function ContactSection() {
                     <p className="font-inter font-medium text-foreground">
                       Phone
                     </p>
-                    <p className="font-inter text-sm text-muted-foreground mt-1">
-                      +1 (555) 123-4567
-                    </p>
+                    <a href="tel:+2348034360049" target="_blank" className="font-inter text-sm text-muted-foreground mt-1">
+                      +234 803 436 0049
+                    </a>
                   </div>
                 </div>
 
@@ -190,9 +190,9 @@ export function ContactSection() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-inter font-medium text-foreground">
+                    <a href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details." target="_blank" className="font-inter font-medium text-foreground">
                       Email
-                    </p>
+                    </a>
                     <p className="font-inter text-sm text-muted-foreground mt-1">
                       info@puritysolar.com
                     </p>

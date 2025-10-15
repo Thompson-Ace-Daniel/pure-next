@@ -29,6 +29,7 @@ export class MockStorage implements IStorage {
 
 export class DatabaseStorage implements IStorage {
   async createContactSubmission(insertContact: InsertContact): Promise<ContactSubmission> {
+    if (!db) throw new Error('Database connection not available');
     const [submission] = await db
       .insert(contactSubmissions)
       .values(insertContact)
@@ -37,6 +38,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getAllContactSubmissions(): Promise<ContactSubmission[]> {
+    if (!db) throw new Error('Database connection not available');
     return await db.select().from(contactSubmissions);
   }
 }
