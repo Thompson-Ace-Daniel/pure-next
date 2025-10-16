@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 export default {
   darkMode: ["class"],
   content: [
-  "./index.html",
-  "./client/index.html",
-  "./src/**/*.{js,jsx,ts,tsx}",
-  "./client/src/**/*.{js,jsx,ts,tsx}",
+    "./client/index.html",
+    "./client/src/**/*.{js,ts,jsx,tsx}",
+    "./shared/**/*.{ts,tsx}",
+    "./server/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
