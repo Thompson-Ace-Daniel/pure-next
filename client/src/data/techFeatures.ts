@@ -1,4 +1,4 @@
-import { TechFeature } from "@shared/schema";
+import { TechFeature } from "@shared/schema.ts";
 
 export const techFeatures: TechFeature[] = [
   {
