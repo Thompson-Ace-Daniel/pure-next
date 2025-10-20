@@ -1,4 +1,4 @@
-import { Testimonial } from "@shared/schema";
+import { Testimonial } from "@shared/schema.ts";
 import installationImg1 from "@assets/stock_images/solar_panel_installa_ad58d8f2.jpg";
 import installationImg2 from "@assets/stock_images/solar_panel_installa_e3a4ecce.jpg";
 
