@@ -1,4 +1,4 @@
-import { contactSubmissions, type ContactSubmission, type InsertContact } from "@shared/schema";
+import { contactSubmissions, type ContactSubmission, type InsertContact } from "@shared/schema.ts";
 import { db } from "./db";
 
 export interface IStorage {

@@ -1,4 +1,4 @@
-import { Product } from "@shared/schema";
+import { Product } from "@shared/schema.ts";
 import residentialInverter from "@assets/stock_images/modern_solar_inverte_5af6ad02.jpg";
 import commercialInverter from "@assets/stock_images/modern_solar_inverte_15e3f512.jpg";
 import industrialInverter from "@assets/stock_images/modern_solar_inverte_f52ae432.jpg";
