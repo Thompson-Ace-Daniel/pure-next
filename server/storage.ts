@@ -44,6 +44,7 @@ export class DatabaseStorage implements IStorage {
 }
 
 // Use mock storage in development, real database storage in production
-export const storage = process.env.NODE_ENV === 'development' 
-  ? new MockStorage() 
-  : new DatabaseStorage();
+const hasDatabase = Boolean(db);
+export const storage = hasDatabase
+  ? new DatabaseStorage()
+  : new MockStorage();

@@ -53,8 +53,11 @@ app.use((req, res, next) => {
       log(`🚀 Dev server running on http://localhost:${port}`);
     });
   } else {
-    // Production (Vercel)
-    serveStatic(app);
+    // Production: Only serve static when not running on Vercel
+    const isVercel = Boolean(process.env.VERCEL);
+    if (!isVercel) {
+      serveStatic(app);
+    }
   }
 })();
 
