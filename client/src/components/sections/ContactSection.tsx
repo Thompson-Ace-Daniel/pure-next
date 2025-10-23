@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSchema, type InsertContact } from "@shared/schema.ts";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+// import { zodResolver } from "@hookform/resolvers/zod";
+// import { insertContactSchema, type InsertContact } from "@shared/schema.ts";
+// import { useMutation } from "@tanstack/react-query";
+// import { apiRequest } from "@/lib/queryClient";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -17,11 +17,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail } from "lucide-react";
 
+// type InsertContact = {
+//   name: string;
+//   email: string;
+//   message: string;
+// };
+
 export function ContactSection() {
   const { toast } = useToast();
 
-  const form = useForm<InsertContact>({
-    resolver: zodResolver(insertContactSchema),
+  const form = useForm({
+    // resolver: zodResolver(insertContactSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -29,6 +35,8 @@ export function ContactSection() {
     },
   });
 
+  // Commented out mutation since no backend
+  /*
   const submitMutation = useMutation({
     mutationFn: async (data: InsertContact) => {
       return await apiRequest("POST", "/api/contact", data);
@@ -48,9 +56,17 @@ export function ContactSection() {
       });
     },
   });
+  */
 
-  const onSubmit = (data: InsertContact) => {
-    submitMutation.mutate(data);
+  // Local-only handler (no API)
+  const onSubmit = (data: any) => {
+    console.log("Form data:", data);
+    toast({
+      title: "Message captured locally",
+      description:
+        "This demo form doesn't send data to a server. Implement API later.",
+    });
+    form.reset();
   };
 
   return (
@@ -136,17 +152,18 @@ export function ContactSection() {
                   type="submit"
                   size="lg"
                   className="w-full md:w-auto min-w-[160px]"
-                  disabled={submitMutation.isPending}
+                  // disabled={submitMutation.isPending}
                   data-testid="button-submit-contact"
                 >
-                  {submitMutation.isPending ? (
+                  {/* {submitMutation.isPending ? (
                     <span className="flex items-center gap-2">
                       <span className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin" />
                       Sending...
                     </span>
                   ) : (
                     "Send Message"
-                  )}
+                  )} */}
+                  Send Message
                 </Button>
               </form>
             </Form>
@@ -198,12 +215,13 @@ export function ContactSection() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p
-                      className="font-inter font-medium text-foreground"
-                    >
+                    <p className="font-inter font-medium text-foreground">
                       Email
                     </p>
-                    <a href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details." target="_blank">
+                    <a
+                      href="mailto:puritysolar.inverter@gmail.com?subject=Inquiry%20about%20Purity%20Solar%20Inverter%20Products&body=Hello%2C%20I%20would%20like%20more%20information%20about%20your%20solar%20inverter%20packages.%20Please%20let%20me%20know%20the%20details."
+                      target="_blank"
+                    >
                       puritysolar.inverter@gmail.com
                     </a>
                   </div>
