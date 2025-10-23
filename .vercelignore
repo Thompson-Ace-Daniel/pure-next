@@ -2,5 +2,3 @@ node_modules
 .git
 server
 shared
-client/node_modules
-client/.vite
