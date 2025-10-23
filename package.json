@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "dotenv -- cross-env NODE_ENV=development tsx server/index.ts",
-    "build": "vite build --outDir dist/client && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir dist/server",
+    "build": "vite build",
+    "build:server": "esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist/server",
     "start": "cross-env NODE_ENV=development BUILD_MODE=true node dist/server/index.js",
     "start:prod": "cross-env NODE_ENV=production node dist/server/index.js",
     "frontend": "vite",

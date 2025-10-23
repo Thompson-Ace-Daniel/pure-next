@@ -3,17 +3,8 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/client" }
-    },
-    {
-      "src": "server/index.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/static-build"
     }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "server/index.ts" },
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "dist/client/index.html" }
-  ]
+  "outputDirectory": "dist"
 }
